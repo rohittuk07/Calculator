@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightcoral; */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    /* background-color: #D0E8C5; */
+}
+.box {
+    width: 400px;
+    height: 500px;
+    padding: 3rem  2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    border: none;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #A6AEBF;
+
+
+
+
+}
+.screen {
+    width: 24.5vw;
+    height: 80px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.1rem 0.1rem;
+
+}
+.screen input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    /* background-color: whitesmoke; */
+    text-align: right;
+    background: transparent;
+    background-color: lemonchiffon;
+
+
+}
+.function {
+    width: 25vw;
+    height: 280px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 1rem;
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border: none;
+    background: transparent;
+    background-color: #FFF8DE;
+}
+#btn19 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}

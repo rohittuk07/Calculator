@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="screen">
+        <input type=""  />
+      </div>
+      <div class="function">
+        <button  class="btn" id="btn1" onclick="clearResult()">AC</button>
+        <button class="btn" id="btn2" onclick="deleteLast()">DEL</button>
+        <button class="btn" id="btn3" onclick="showValue(event)">%</button>
+        <button class="btn" id="btn4" onclick="showValue(event)">/</button> 
+        <button class="btn" id="btn5" onclick="showValue(event)">7</button>
+        <button class="btn" id="btn6" onclick="showValue(event)">8</button>
+        <button class="btn" id="btn7" onclick="showValue(event)">9</button>
+        <button class="btn" id="btn8" onclick="showValue(event)">*</button> 
+        <button class="btn" id="btn" onclick="showValue(event)">4</button>
+        <button class="btn" id="btn10" onclick="showValue(event)">5</button>
+        <button class="btn" id="btn11" onclick="showValue(event)">6</button>
+        <button class="btn" id="btn12" onclick="showValue(event)">-</button>
+        <button class="btn" id="btn13" onclick="showValue(event)">1</button>
+        <button class="btn" id="btn14" onclick="showValue(event)">2</button>
+        <button class="btn" id="btn15" onclick="showValue(event)">3</button>
+        <button class="btn" id="btn16" onclick="showValue(event)">+</button>
+        <button class="btn" id="btn17" onclick="showValue(event)">0</button>
+        <button class="btn" id="btn18" onclick="showValue(event)">.</button>
+        <button class="btn" id="btn19" onclick="result()">=</button>
+      </div>
+    </div>
+    <script>
+      let input = document.querySelector("input");
+    function showValue (e){
+      input.value += e.target.innerText
+    }
+    function result(){
+      input.value = eval(input.value)
+    }
+    function clearResult(){
+      input.value = "";
+    }
+    function deleteLast() {
+      input.value = input.value.slice(0,-1)
+    }
+     
+    </script>
+  </body>
+</html>
